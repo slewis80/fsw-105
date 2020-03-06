@@ -10,11 +10,11 @@ if (operation === "add") {
     console.log("The result is: " + (num1 + num2));
 }
 if (operation === "sub") {
-    console.log("The result is: " + num1 - num2);
+    console.log("The result is: " + (num1 - num2));
 }
 if (operation === "mul") {
-    console.log("The result is: " + num1 * num2);
+    console.log("The result is: " + (num1 * num2));
 }
 if (operation === "div") {
-    console.log("The result is: " + num1 / num2);
+    console.log("The result is: " + (num1 / num2));
 }
