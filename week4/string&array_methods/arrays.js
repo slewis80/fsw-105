@@ -14,7 +14,7 @@ var orangeIndex = fruit.indexOf("orange")
 console.log("New index of orange is: " + orangeIndex)
 
 // 4
-fruit.push(4)
+fruit.push(1)
 console.log("fruits: " + fruit)
 
 // 5

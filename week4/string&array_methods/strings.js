@@ -1,30 +1,47 @@
 // 1
-var name = "sabrina";
-var upperCaseName = name.toUpperCase();
-console.log(upperCaseName + name)
+function capitalizeAndLowercase(str) {
+    var upperCase = str.toUpperCase();
+    var lowerCase = str.toLowerCase();
+    console.log(upperCase + lowerCase)
+}
+capitalizeAndLowercase("Hello")
 
 // 2
-var helloWorld = "Hello World";
-var characters = helloWorld.length;
-var result = characters / 2;
-console.log(Math.floor(result))
+function findMiddleIndex(str) {
+    var characterCount = str.length;
+    var halfCharacters = characterCount / 2;
+    console.log(Math.floor(halfCharacters))
+}
+findMiddleIndex("Hello")
+findMiddleIndex("Hello World")
 
 // 3
-var string = "You cannot read all of this string.";
-console.log(string.slice(0, string.length / 2))
+function returnFirstHalf(str) {
+    var characterCount = str.length;
+    var halfCharacters = characterCount / 2;
+    var slicedStr = str.slice(0, halfCharacters)
+    console.log(slicedStr)
+}
+returnFirstHalf("Hello")
+returnFirstHalf("Hello World")
 
 // 4
-var capitalAndLowerCase = "Capital and lower";
-var firstHalf = capitalAndLowerCase.slice(0, 8);
-var secondHalf = capitalAndLowerCase.slice(8, 17);
-console.log(firstHalf.toUpperCase() + secondHalf.toLowerCase())
+function capitalizeAndLowerCase2(str) {
+    var characterCount = str.length;
+    var halfCharacters = characterCount / 2;
+    var slicedStrStart = str.slice(0, halfCharacters);
+    var slicedStrEnd = str.slice(halfCharacters);
+    console.log(slicedStrStart.toUpperCase() + slicedStrEnd.toLowerCase())
+}
+capitalizeAndLowerCase2("Hello")
+capitalizeAndLowerCase2("Hello World")
 
 // 5
-function capitalLetter(str) {
+function capitalize(str) {
     str = str.split(" ");
     for (var i = 0, x = str.length; i < x; i++) {
         str[i] = str[i][0].toUpperCase() + str[i].substr(1);
     }
     return str.join(" ");
 }
-console.log(capitalLetter("all of these words should be capitalized."));
+console.log(capitalize("hey friends! practice practice practice."));
