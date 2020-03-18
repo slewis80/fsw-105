@@ -55,13 +55,15 @@ console.log(doMathSum(5, 10))
 
 const produceProduct = (a, b) => a * b;
 console.log(produceProduct(5, 10))
-// 5 & 6
-const firstName = "Jane"
-const lastName = "Doe"
-let age = 100
+// 5
+const printString = (firstName = "Jane", lastName = "Doe", age = 100) => "Hi " + firstName + " " + lastName + ", how does it feel to be " + age + "?"
+console.log(printString())
+console.log(printString("Sabrina", "Lewis", 39))
 
-const printString = (firstName, lastName, age) => `Hi ${firstName} ${lastName}, how does it feel to be ${age}?`
-console.log(printString(firstName, lastName, age))
+// 6
+const printString2 = (firstName = "Jane", lastName = "Doe", age = 100) => `Hi ${firstName} ${lastName}, how does it feel to be ${age}?`
+console.log(printString2())
+console.log(printString2("Sabrina", "Lewis", 39))
 // 7
 const animals = [
     {
